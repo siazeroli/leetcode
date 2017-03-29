@@ -10,4 +10,4 @@ Ex: 242, 345
 
 Array
 1. Arrays.sort method is good for problems (not sort-based problems), which are needed to find something in order, such as using binary search.
-Ex: 136,217,268,349
+Ex: 136,153,217,268,349
