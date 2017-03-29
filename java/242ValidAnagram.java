@@ -22,9 +22,6 @@ public class Solution {
         Arrays.sort(sc);
         Arrays.sort(tc);
         
-        String newS = new String(sc);
-        String newT = new String(tc);
-        
-        return newS.equals(newT) ? true : false;
+        return new String(sc).equals(new String(tc)) ? true : false;
     }
 }
