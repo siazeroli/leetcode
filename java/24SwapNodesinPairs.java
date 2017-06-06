@@ -24,14 +24,12 @@ public class Solution {
             return head;
         }
         
+        ListNode dummyHead = new ListNode(0);
+        dummyHead.next = head;
+        
+        ListNode pre = dummyHead;
+        
         ListNode cur = head;
-        
-        head = cur.next;
-        cur.next = head.next;
-        head.next = cur;
-        
-        ListNode pre = cur;
-        cur = cur.next;
         
         while(cur != null){
             if(cur.next == null){
@@ -48,6 +46,6 @@ public class Solution {
             }
         }
         
-        return head;
+        return dummyHead.next;
     }
 }
